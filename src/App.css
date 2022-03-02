@@ -1,38 +1,306 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #1C1C1C;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main--class{
+  position: absolute;
+  width: 550px;
+  height: 868px;
+  left: 65px;
+  top: 53px;
+
+  background: #23252C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info--image{
+  position: absolute;
+  width: 317px;
+  height: 317px;
+  left: 116px;
+  top: 44px;
+  /* background: url(.png); */
+  border-radius: 10px 10px 0px 0px;
+}
+
+.info--linkedinButton{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+  position: absolute;
+  width: 115px;
+  height: 34px;
+  left: 283px;
+  top: 468px;
+  border: 0px solid #D1D5DB;
+  background: #5093E2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
-.App-link {
-  color: #61dafb;
+.info--EmailButton{
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+
+  position: absolute;
+  width: 115px;
+  height: 34px;
+  left: 151px;
+  top: 468px;
+
+  /* white */
+
+  background: #FFFFFF;
+  /* gray/300 */
+
+  border: 1px solid #D1D5DB;
+  box-sizing: border-box;
+  /* shadow/sm */
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.info--linkedInButton--icon{
+  position: static;
+  width: 16px;
+  height: 16px;
+  left: 16px;
+  top: 9px;
+  filter: invert();
+
+/* Inside auto layout */
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+
+.info--envelopeButton--icon{
+  position: static;
+  width: 16px;
+  height: 16px;
+  left: 16px;
+  top: 9px;
+
+/* Inside auto layout */
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.info--label{
+  /* Laura Smith */
+
+
+  position: absolute;
+  width: 178.06px;
+  height: 25.81px;
+  left: 186px;
+  top: 382px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.info--label1{
+
+position: absolute;
+width: 178.06px;
+height: 14.19px;
+left: 186px;
+top: 414px;
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 12.8px;
+line-height: 15px;
+text-align: center;
+
+color: #F3BF99;
+
+}
+
+.info--label2{
+  position: absolute;
+  width: 228px;
+  height: 16px;
+  left: 161px;
+  top: 437px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* identical to box height, or 15px */
+
+  text-align: center;
+
+  color: #F5F5F5;
+}
+
+.about--label{
+
+  position: absolute;
+  width: 242.71px;
+  height: 21px;
+  left: 152px;
+  top: 535px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+
+  color: #F5F5F5;
+
+
+}
+
+.about--text{
+  position: absolute;
+  width: 247px;
+  height: 61px;
+  left: 152px;
+  top: 561px;
+  
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 10.24px;
+  line-height: 15px;
+  /* or 15px */
+  
+  
+  color: #DCDCDC;  
+}
+
+.info--rectangle{
+  /* Rectangle 91 */
+
+
+  position: absolute;
+  width: 317px;
+  height: 399px;
+  left: 116px;
+  top: 361px;
+
+  background: #1A1B21;
+}
+.interest--label{
+  position: absolute;
+  width: 242.71px;
+  height: 21px;
+  left: 152px;
+  top: 649px;
+  
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  
+  
+  color: #F5F5F5;
+  
+
+}
+
+.interest--text{
+  position: absolute;
+  width: 247px;
+  height: 61px;
+  left: 152px;
+  top: 675px;
+  
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.24px;
+  line-height: 15px;
+  /* or 15px */
+  
+  
+  color: #DCDCDC;
+}
+
+.footer--rectangle{
+  /* Social Icons Background */
+    position: absolute;
+    width: 317px;
+    height: 64px;
+    left: 116px;
+    top: 760px;
+
+    background: #161619;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.footer--twitter{
+  position: absolute;
+  left: 34.36%;
+  right: 61.09%;
+  top: 89.75%;
+  bottom: 7.37%;
+  /* background: #918E9B; */
+  /* filter: invert(); */
+}
+
+.footer--facebook
+{
+  position: absolute;
+  left: 43.27%;
+  right: 52.18%;
+  top: 89.75%;
+  bottom: 7.37%;
+}
+
+.footer--instagram
+{
+  position: absolute;
+  left: 52.18%;
+  right: 43.27%;
+  top: 89.75%;
+  bottom: 7.37%;
+}
+
+.footer--git{
+  position: absolute;
+  left: 61%;
+  right: 34.45%;
+  top: 89.8%;
+  bottom: 7.32%;
 }
